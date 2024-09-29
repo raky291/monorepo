@@ -5,8 +5,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Trash2 } from "lucide-react";
 import { create, deleteById, toggleById } from "@/actions";
 import { useRef } from "react";
+import { Todo } from "@repo/database";
 
-export function TodoListComponent({ todos }: { todos: any[] }) {
+export function TodoListComponent({ todos }: { todos: Todo[] }) {
   const ref = useRef<HTMLFormElement>(null);
 
   return (
